@@ -1,0 +1,129 @@
+type ERC1967Proxy_AccountFrozen {
+  id: ID!
+  account: String!
+}
+
+type ERC1967Proxy_AccountThawed {
+  id: ID!
+  account: String!
+}
+
+type ERC1967Proxy_Approval {
+  id: ID!
+  owner: String!
+  spender: String!
+  value: BigInt!
+}
+
+type ERC1967Proxy_Deposit {
+  id: ID!
+  sender: String!
+  owner: String!
+  assets: BigInt!
+  shares: BigInt!
+}
+
+type ERC1967Proxy_EIP712DomainChanged {
+  id: ID!
+}
+
+type ERC1967Proxy_Initialized {
+  id: ID!
+  version: BigInt!
+}
+
+type ERC1967Proxy_MaxPeriodRewardsUpdated {
+  id: ID!
+  oldValue: BigInt!
+  newValue: BigInt!
+}
+
+type ERC1967Proxy_MaxRewardPercentUpdated {
+  id: ID!
+  oldValue: BigInt!
+  newValue: BigInt!
+}
+
+type ERC1967Proxy_MaxTotalRewardsUpdated {
+  id: ID!
+  oldValue: BigInt!
+  newValue: BigInt!
+}
+
+type ERC1967Proxy_NavOracleUpdated {
+  id: ID!
+  oldOracle: String!
+  newOracle: String!
+  feedId: String!
+}
+
+type ERC1967Proxy_Paused {
+  id: ID!
+  account: String!
+}
+
+type ERC1967Proxy_RewardPeriodSecondsUpdated {
+  id: ID!
+  oldValue: BigInt!
+  newValue: BigInt!
+}
+
+type ERC1967Proxy_RewardsDistributed {
+  id: ID!
+  amount: BigInt!
+  timestamp: BigInt!
+}
+
+type ERC1967Proxy_RoleAdminChanged {
+  id: ID!
+  role: String!
+  previousAdminRole: String!
+  newAdminRole: String!
+}
+
+type ERC1967Proxy_RoleGranted {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type ERC1967Proxy_RoleRevoked {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type ERC1967Proxy_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+}
+
+type ERC1967Proxy_Unpaused {
+  id: ID!
+  account: String!
+}
+
+type ERC1967Proxy_Upgraded {
+  id: ID!
+  implementation: String!
+}
+
+type ERC1967Proxy_Withdraw {
+  id: ID!
+  sender: String!
+  receiver: String!
+  owner: String!
+  assets: BigInt!
+  shares: BigInt!
+}
+
+type ERC1967Proxy_YieldVaultUpdated {
+  id: ID!
+  oldVault: String!
+  newVault: String!
+}
+

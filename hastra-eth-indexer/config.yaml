@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: hastra-eth-indexer
+chains:
+- id: 1
+  start_block: 0
+  contracts:
+  - name: ERC1967Proxy
+    address:
+    - "0x19ebb35279A16207Ec4ba82799CC64715065F7F6"
+    events:
+    - event: AccountFrozen(address indexed account)
+    - event: AccountThawed(address indexed account)
+    - event: Approval(address indexed owner, address indexed spender, uint256 value)
+    - event: Deposit(address indexed sender, address indexed owner, uint256 assets, uint256 shares)
+    - event: EIP712DomainChanged()
+    - event: Initialized(uint64 version)
+    - event: MaxPeriodRewardsUpdated(uint256 oldValue, uint256 newValue)
+    - event: MaxRewardPercentUpdated(uint256 oldValue, uint256 newValue)
+    - event: MaxTotalRewardsUpdated(uint256 oldValue, uint256 newValue)
+    - event: NavOracleUpdated(address oldOracle, address newOracle, bytes32 feedId)
+    - event: Paused(address account)
+    - event: RewardPeriodSecondsUpdated(uint256 oldValue, uint256 newValue)
+    - event: RewardsDistributed(uint256 amount, uint256 timestamp)
+    - event: RoleAdminChanged(bytes32 indexed role, bytes32 indexed previousAdminRole, bytes32 indexed newAdminRole)
+    - event: RoleGranted(bytes32 indexed role, address indexed account, address indexed sender)
+    - event: RoleRevoked(bytes32 indexed role, address indexed account, address indexed sender)
+    - event: Transfer(address indexed from, address indexed to, uint256 value)
+    - event: Unpaused(address account)
+    - event: Upgraded(address indexed implementation)
+    - event: Withdraw(address indexed sender, address indexed receiver, address indexed owner, uint256 assets, uint256 shares)
+    - event: YieldVaultUpdated(address oldVault, address newVault)
